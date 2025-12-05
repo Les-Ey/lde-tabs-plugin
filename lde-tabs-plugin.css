@@ -1,0 +1,59 @@
+/*
+ * LDE Tabs Plugin Stylesheet - Minimal Structural Styles (Max Specificity)
+ * Author: Les Ey
+ */
+
+/* --- Tab Controller Styling --- */
+.lde-tabs-container {
+    display: flex !important; /* Ensure buttons line up */
+    border-bottom: 2px solid #ddd !important; 
+    margin-bottom: 0 !important; 
+}
+.lde-tab-button {
+    /* Structural & Base Aesthetic Styles */
+    border: 1px solid #ddd !important;
+    border-bottom: none !important; 
+    border-radius: 6px 6px 0 0 !important;
+    
+    padding: 10px 18px !important;
+    margin-right: 5px !important; 
+    margin-bottom: -2px !important; /* CRITICAL: Forces button over the container border */
+    
+    cursor: pointer !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.lde-tab-button.lde-active {
+    background-color: #fff !important; 
+    border-color: #ddd !important;
+    border-bottom: 2px solid #fff !important; /* CRITICAL: Covers the container border */
+}
+
+/* --- Tab Content Styling --- */
+.lde-tab-content {
+    display: none !important; /* CRITICAL: Must be strong to keep content hidden initially */
+    
+    /* Ensure no extra margin is pushing it down */
+    margin-top: 0 !important; 
+    
+    /* Fix the border alignment */
+    border-top: 1px solid #ddd !important; /* Re-add the border top */
+    margin-top: -1px !important; /* Pull it up to sit perfectly under the container border */
+}
+/* Fix for the initial active tab visibility */
+.lde-tab-content.lde-active {
+    display: block !important; /* CRITICAL: Must be strong to make content visible when clicked */
+}
+
+.lde-tab-content > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* --- TEMPORARY ON-LOADING VISIBILITY FIX --- */
+.lde-tab-content.lde-tab-onloading {
+    /* Guarantees visibility on load, overriding display:none !important */
+    display: block !important; 
+}
