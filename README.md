@@ -1,5 +1,7 @@
 # LDE Tabs Plugin
 
+![Free WordPress Tab Plugin Screenshot](https://www.les-ey.online/wp-content/uploads/2025/11/free-wordpress-tab-plugin.jpg)
+
 A lightweight, efficient WordPress plugin that enables **responsive, tabbed content** using the native Block Editor (Gutenberg) features.
 
 This plugin avoids heavy, proprietary frameworks and focuses on utilizing the built-in **HTML Anchor** and **Additional CSS Class(es)** fields for ultra-lightweight content organization.
