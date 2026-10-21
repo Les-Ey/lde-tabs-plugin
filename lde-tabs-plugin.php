@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: LDE Tabs Plugin
- * Plugin URI: https://les-ey.online
+ * Plugin URI: https://les-ey.comn.au
  * Description: Creates a responsive tab menu to toggle
  * visibility of Block Editor content.
  * Usage: Place [lde_tabs config="Label 1:id-1, Label 2:id-2"]
@@ -12,7 +12,7 @@
  * (Use Advanced in the Block settings to set these values)
  * Version: 0.9.1
  * Author: Les Ey
- * Author URI: https://les-ey.online/
+ * Author URI: https://les-ey.com.au/
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: lde-tabs
